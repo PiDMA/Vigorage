@@ -10,6 +10,10 @@
     <style type="text/css">
       @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
+      @font-face {
+         font-family: arista;
+         src: url(./arista-pro.pro-trial-regular.ttf);
+      }
       /* Targetting non windows email clients <style type="text/css"> */
       table {
          border-spacing: 0;
@@ -48,6 +52,10 @@
          .banner {
             padding-top: 10px!important;
             padding-bottom: 40px!important;
+         }
+         .contact-us{
+            width: 600px;
+            border-radius: 100;
          }
 
       }
@@ -133,14 +141,17 @@
      <table width="100%" style="border-spacing: 0;background-color: #34495e; color: #fafdfe;" role="presentation">
       <tr>
         <td style="text-align: left;padding: 10px 0px 8px 10px;">
-          <h1>Company Name</h1>
+          <h1 style="font-family: arista; font-size: 3rem; font-weight: lighter;">Company A</h1>
         </td>
         <td>
-          <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/bPLzh61/circle-facebook.png"  alt="Facebook" title="Facebook logo" width="32" border="0"></a>
+          <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/bPLzh61/circle-facebook.png"  alt="Facebook" title="Facebook logo" width="42" border="0"></a>
         </td>
         <td>
-          <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/sRH7TK2/circle-twitter.png""  alt="Facebook logo" title="Twitter" width="32" border="0"></a>
+          <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/sRH7TK2/circle-twitter.png""  alt="Facebook logo" title="Twitter" width="42" border="0"></a>
         </td>
+        <td>
+         <a href="https://example.com" target="_blank"><img src="https://wp-assets.rss.com/blog/wp-content/uploads/2019/10/10111557/social_style_3_rss-512-1.png"  alt="RSS logo" title="RSS Feed" width="32" border="0" style="border-radius: 50%;"></a>
+       </td>
       </tr>
 
      </table>
@@ -151,22 +162,22 @@
 
 
 <!-- HEADING/<P> TAG/<UL> TAG START -->
-  <!-- heading TODO: ADD TABLE-->
+  <!-- heading -->
+
 <tr>
-  <td>
+  <td style="padding: 10px 20px;">
     <h1>Heading 1</h1>
   </td>
 </tr>
-<!-- paragraph TODO: ADD TABLE-->
+<!-- paragraph-->
 <tr>
-  <td>
+  <td style="padding: 10px 20px;">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos omnis optio necessitatibus, ab, cupiditate aliquid porro mollitia magni officiis nesciunt dicta. Modi, facilis eius eaque rem accusamus rerum quos.</p>
   </td>
 </tr>
-<!-- ul and list items TODO: ADD TABLE-->
+<!-- ul and list items -->
 <tr>
-  <td>
-
+  <td style="padding: 10px 20px;">
     <ul>
       <li>Something interesting 1</li>
       <li>Something interesting 2</li>
@@ -179,17 +190,11 @@
 
 <!-- TWO COLUMN PRICING START -->
 
-<!-- column 1 colours:
-   -top: #4fc1e9
-   -middle: #d7f1fa
-   -line break: #aae1f4
-   -bottom: #e6e9ed
-   -button: #3bafda 
-  -->
+<!-- column 1 -->
   
    <tr>
     <td style="padding: 35px 0 30px 0;">
-       <table width="100%" style="border-spacing: 0;" role="presentation">
+       <table width="108%" style="border-spacing: 0;" role="presentation">
           <tr>
              <td class="two-columns" style="padding: 0;font-size: 0;text-align: center;">
 
@@ -242,14 +247,7 @@
                 </td><td width="300" valign="top" style="padding: 0;">
                 <![endif]-->
 
-<!-- 
-  column 2 colours:
-   -top: #ffce54
-   -middle: #fffaed
-   -line break: #ffebba
-   -bottom: #e6e9ed
-   -button: #f6bb42 
--->
+<!--column 2 -->
                 <table class="column" style="border-spacing: 0;vertical-align: top;width: 100%;max-width: 300px;display: inline-block;" role="presentation">
                   <tr>
                      <td class="padding" style="padding: 20px;" >
@@ -319,8 +317,9 @@
 
         <tr>
                                      
-          <td style="border-radius: 10px;" bgcolor="#e6e9ed" align="center">
-            <a href="https://example.com" target="_blank" style=" font-size: 32px; font-weight: bold;text-decoration:none;color:#ffffff;background-color: #8cc152;border:1px solid #8cc152;padding: 10px 25px;display: inline-block;">Contact Us</a>
+          <td align="center">
+            <a href="https://example.com" target="_blank" class="contact-us" style=" font-size: 32px; font-weight: bold;text-decoration:none;color:#ffffff;background-color: #8cc152;border:1px solid #8cc152;padding: 10px 25px;display: inline-block; border-radius: 20px;">Contact Us</a>
+            <br><br>
           </td>
          </tr>
 
@@ -331,19 +330,17 @@
 
 <!-- FOOTER START -->
 <tr>
-  <td style="padding: 0;background-color: #565656;">
+  <td style="padding: 0;background-color: #34495e;">
      <table width="100%" style="border-spacing: 0;" role="presentation">
 
         <tr>
            <td style="padding: 60px 0 50px 0;color: #ffffff;text-align: center;font-size: 16px;">
-           
-             
-           
+            <p>
+               <a href="https://example.com" target="_blank">CompanyA.com</a> |
+               <a href="https://example.com" target="_blank">Privacy Policy</a> |
+               <a href="https://example.com" target="_blank">Unsubscribe</a>
+             </p>
            </td>
-        </tr>
-
-        <tr>
-           <td height="4" style="background-color: #21c6b8;"></td>
         </tr>
 
      </table>
