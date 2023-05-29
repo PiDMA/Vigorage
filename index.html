@@ -1,31 +1,393 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="color-scheme" content="light dark">
-   <meta name="supported-color-schemes" content="light dark">
-	<title>HTML Email Template Boilerplate</title>
-   <style type="text/css">
-   	@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="color-scheme" content="light dark">
+      <meta name="supported-color-schemes" content="light dark"> -->
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+      /* Targetting non windows email clients <style type="text/css"> */
+      table {
+         border-spacing: 0;
+      }
+      td {
+         padding: 0;
+      }
+      p {
+         font-size: 15px;
+      }
+      img {
+         border: 0;
+      }
+      a {
+         color: #e8fbfa;
+         text-decoration: none;
+      }
+
+      .two-columns .padding{
+            padding-right: 0!important;
+            padding-left: 0!important;
+      }
 
 		@media screen and (max-width: 599.98px) {
-
+         .banner {
+            height: auto!important;
+            padding-top: 40px!important;
+            padding-bottom: 60px!important;
+         }
+         .two-columns .padding{
+            padding-right: 0!important;
+            padding-left: 0!important;
+         }
       }
       @media screen and (max-width: 399.98px) {
+         .banner {
+            padding-top: 10px!important;
+            padding-bottom: 40px!important;
+         }
 
       }
 
       /* Custom Dark Mode Colors */
 
       @media (prefers-color-scheme: dark) {
-
       }
-	</style>
-</head>
-<body>
+    </style>
+    <!-- Conditional targetting our banner image for windows/outlook email clients-->
+    <!-- [if (gte mso 9)|(IE)]> 
+         <style type="text/css"> 
+            table{border-collapse: collapse!important;}
+         </style>
+      <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!-- [if (gte mso 9)|(IE)]> 
+         <style type="text/css"> 
+            body{
+               background-color: #dde0e1; !important
+            }
+            body, table, td, p, a {
+               font-family: sans-serif, Arial, Helvitica!important
+            }
+         </style>
+      <![endif]-->
+
+    <center
+      style="width: 100%; background-color: #dde0e1; padding-bottom: 40px"
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove this comment after) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This a some preheader email text: SALE!!! 25% OFF FOR FATHERS DAY
+        </div>
+        <!-- End of preheader text -->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0px;
+            color: #565656;
+            font-family: 'Lato', sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- [if (gte mso 9)|(IE)]> 
+         <table width="600" align="center" style="border-spacing: 0; color:#565656;" role="presentation">
+         <tr>
+         <td style="padding:0;">
+      <![endif]-->
+
+<!-- COMPANY LOGO/SOCIAL MEDIA LINKS START -->
+<tr>
+  <td style="padding: 0;">
+     <table width="100%" style="border-spacing: 0;background-color: #34495e; color: #fafdfe;" role="presentation">
+      <tr>
+        <td style="text-align: left;padding: 10px 0px 8px 10px;">
+          <h1>Company Name</h1>
+        </td>
+        <td>
+          <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/bPLzh61/circle-facebook.png"  alt="Facebook" title="Facebook logo" width="32" border="0"></a>
+        </td>
+        <td>
+          <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/sRH7TK2/circle-twitter.png""  alt="Facebook logo" title="Twitter" width="32" border="0"></a>
+        </td>
+      </tr>
+
+     </table>
+  </td>
+</tr>
+
+<!-- COMPANY LOGO/SOCIAL MEDIA LINKS END -->
 
 
-</body>
+<!-- HEADING/<P> TAG/<UL> TAG START -->
+  <!-- heading TODO: ADD TABLE-->
+<tr>
+  <td>
+    <h1>Heading 1</h1>
+  </td>
+</tr>
+<!-- paragraph TODO: ADD TABLE-->
+<tr>
+  <td>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos omnis optio necessitatibus, ab, cupiditate aliquid porro mollitia magni officiis nesciunt dicta. Modi, facilis eius eaque rem accusamus rerum quos.</p>
+  </td>
+</tr>
+<!-- ul and list items TODO: ADD TABLE-->
+<tr>
+  <td>
+
+    <ul>
+      <li>Something interesting 1</li>
+      <li>Something interesting 2</li>
+      <li>Something interesting 3</li>
+    </ul>
+  </td>
+</tr>
+<!-- HEADING/<P> TAG/<UL> TAG END -->
+
+
+<!-- TWO COLUMN PRICING START -->
+
+<!-- column 1 colours:
+   -top: #4fc1e9
+   -middle: #d7f1fa
+   -line break: #aae1f4
+   -bottom: #e6e9ed
+   -button: #3bafda 
+  -->
+  
+   <tr>
+    <td style="padding: 35px 0 30px 0;">
+       <table width="100%" style="border-spacing: 0;" role="presentation">
+          <tr>
+             <td class="two-columns" style="padding: 0;font-size: 0;text-align: center;">
+
+                <!--[if (gte mso 9)|(IE)]>
+                   <table width="100%" style="border-spacing: 0;" role="presentation">
+                   <tr>
+                   <td width="300" valign="top" style="padding: 0;">
+                <![endif]-->
+
+                <table class="column" style="border-spacing: 0;vertical-align: top;width: 100%;max-width: 300px;display: inline-block;" role="presentation">
+                   <tr>
+                      <td class="padding" style="padding: 20px;">
+                         <table class="content" style="border-spacing: 0;text-align: center;color: #ffffff;" role="presentation">
+                            <tr>
+                               <td width="250"style="background-color: #4fc1e9;">
+                                  <p style="font-size:2rem;">$299</p>
+                                  <p style="font-size: 1rem;">per month</p>
+                               </td>
+                            </tr>
+                              <tr>
+                                <td style="background-color: #d7f1fa; color: #565656;">
+                                  <p>Basic</p>
+                                  <p>Lots of clients & users</p>
+                                  <hr color="#aae1f4">
+                                  <p>250 SKU's</p>
+                                  <p>1 GB Storage</p>
+                                  <p>3.5% transaction fee</p>
+                              </td>
+                            </tr>
+                            
+                            <tr bgcolor="#e6e9ed" style="height: 100px;">
+                               <td align="left" style="padding-left: 10px;">
+                                  <table align="center" border="0" cellpadding="0" style="border-spacing: 0; background-color: #34495e;" role="presentation">
+                                     <tr>
+                                      
+                                      <td style="border-radius: 10px;" bgcolor="#e6e9ed">
+                                        <a href="https://example.com" target="_blank" style=" font-size: 16px; font-weight: bold;text-decoration:none;color:#ffffff;background-color: #3bafda;border:1px solid #3bafda;padding: 10px 25px;display: inline-block;">Try a week</a>
+                                      </td>
+                                     </tr>
+                                  </table>
+                               </td>
+                            </tr>
+                         </table>
+
+                      </td>
+                   </tr>
+                </table>
+
+                <!--[if (gte mso 9)|(IE)]>
+                </td><td width="300" valign="top" style="padding: 0;">
+                <![endif]-->
+
+<!-- 
+  column 2 colours:
+   -top: #ffce54
+   -middle: #fffaed
+   -line break: #ffebba
+   -bottom: #e6e9ed
+   -button: #f6bb42 
+-->
+                <table class="column" style="border-spacing: 0;vertical-align: top;width: 100%;max-width: 300px;display: inline-block;" role="presentation">
+                  <tr>
+                     <td class="padding" style="padding: 20px;" >
+                        <table class="content" style="border-spacing: 0;text-align: center;color: #ffffff;" role="presentation" >
+                           <tr>
+                             <!-- width="260" style="max-width: 260px;border-radius: 8px;" border="0" -->
+                              <td width="250"style="background-color: #ffce54;">
+                                 <p style="font-size:2rem;">$499</p>
+                                 <p style="font-size: 1rem;">per month</p>
+                              </td>
+                           </tr>
+                             <tr>
+                               <td style="background-color: #fffaed; color: #565656;">
+                                 <p>Unlimited</p>
+                                 <p>Lots of clients & users</p>
+                                 <hr color="#ffebba">
+                                 <p>Unlimited SKU's</p>
+                                 <p>20 GB Storage</p>
+                                 <p>3.5% transaction fee</p>
+                             </td>
+                           </tr>
+                           
+                           <tr bgcolor="#e6e9ed" style="height: 100px;">
+                              <td align="left" style="padding-left: 10px;">
+                                 <table align="center" border="0" cellpadding="0" style="border-spacing: 0; background-color: #34495e;" role="presentation">
+                                    <tr>
+                                     
+                                     <td style="border-radius: 10px;" bgcolor="#e6e9ed">
+                                       <a href="https://example.com" target="_blank" style=" font-size: 16px; font-weight: bold;text-decoration:none;color:#ffffff;background-color: #f6bb42;border:1px solid #f6bb42;padding: 10px 25px;display: inline-block;">Try a week</a>
+                                     </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+
+                     </td>
+                  </tr>
+               </table>
+                
+
+                <!--[if (gte mso 9)|(IE)]>
+                   </td>
+                   </tr>
+                   </table>
+                <![endif]-->
+
+             </td>
+          </tr>
+       </table>
+    </td>
+ </tr>
+<!-- TWO COLUMN PRICING END-->
+
+
+<!-- CONTACT US START -->
+<tr>
+  <td style="padding: 0;">
+     <table width="100%" style="border-spacing: 0;" role="presentation">
+        <tr>
+           <td style="padding: 60px 0 50px 0;color: #565656;text-align: center;font-size: 16px;">
+           
+              <h1>Want to learn more? Contact Us Today!</h1>
+                
+           </td>
+        </tr>
+
+        <tr>
+                                     
+          <td style="border-radius: 10px;" bgcolor="#e6e9ed" align="center">
+            <a href="https://example.com" target="_blank" style=" font-size: 32px; font-weight: bold;text-decoration:none;color:#ffffff;background-color: #8cc152;border:1px solid #8cc152;padding: 10px 25px;display: inline-block;">Contact Us</a>
+          </td>
+         </tr>
+
+     </table>
+  </td>
+</tr>
+<!-- CONTACT US END -->
+
+<!-- FOOTER START -->
+<tr>
+  <td style="padding: 0;background-color: #565656;">
+     <table width="100%" style="border-spacing: 0;" role="presentation">
+
+        <tr>
+           <td style="padding: 60px 0 50px 0;color: #ffffff;text-align: center;font-size: 16px;">
+           
+              <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/rdjLnjG/html-email-white.png" alt="" width="210" border="0"></a>
+              <p style="font-size: 16px;padding: 10px 0 5px 0;">Responsive HTML Email</p>
+              <p style="font-size: 16px;padding-bottom: 5px;">123 Street Road, City, State 55555</p>
+              <p style="font-size: 16px;padding-bottom: 5px;"><a href="mailto:email@example.com" style="text-decoration:none;color:#e8fbfa">email@example.com</a></p>
+              <p style="font-size: 16px;padding-bottom: 5px;"><a href="tel:18008888888" style="text-decoration:none;color:#e8fbfa">1-800-888-8888</a></p>
+              <p style="font-size: 13px;"><a href="https://example.com" style="text-decoration:none;color:#e8fbfa">UNSUBSCRIBE</a></p>
+           
+           </td>
+        </tr>
+
+        <tr>
+           <td height="4" style="background-color: #21c6b8;"></td>
+        </tr>
+
+     </table>
+  </td>
+</tr>
+<!-- FOOTER END -->
+
+        </table>
+        <!-- [if (gte mso 9)|(IE)]> 
+         </td>
+         </tr>
+         </table>
+      <![endif]-->
+      </div>
+    </center>
+  </body>
 </html>
+
+
+<!-- 
+COLOURS FROM PHOTOSHOP
+
+Top and bottom: #34495e
+Background: #ffffff
+standard black and white text
+
+column 1 colours:
+   -top: #4fc1e9
+   -middle: #d7f1fa
+   -line break: #aae1f4
+   -bottom: #e6e9ed
+   -button: #3bafda
+
+column 2 colours:
+   -top: #ffce54
+   -middle: #fffaed
+   -line break: #ffebba
+   -bottom: #e6e9ed
+   -button: #f6bb42
+
+contact us button: #8cc152
+ -->
